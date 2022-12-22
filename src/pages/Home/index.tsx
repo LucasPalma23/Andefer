@@ -22,8 +22,10 @@ export default function Home() {
     <>
       <header>
         <nav>
-          <img src={imgLogoDefault} alt="Logo da empresa" />
-          <ul>
+      <div className="container-image">
+        <img src={imgLogoDefault} alt="Logo da empresa" className='img-logo-header' />
+      </div>
+          <ul className='nav-list'>
             <div>
               <li>Início</li>
             </div>
@@ -41,6 +43,7 @@ export default function Home() {
       </header>
       <div className="text-title">
         <img src={imgLogoBlue} alt="Logo da empresa" />
+        <h1>FUTURO MILIONÁRIOJI0</h1>
       </div>
       <section className="section-main">
         <div className="text-section-main">
@@ -97,49 +100,63 @@ export default function Home() {
       </div>
       <div className="divisao"></div>
       <h1 className='title-produtos'>DIVERSOS PRODUTOS POR UM ÓTIMO PREÇO</h1>
-      <div className="produtos">
-        <Produto
-          name='Perfil Viga I.W.U-10,16cm X 6,76CM'
-          image={<img src={imgVigas} />}
-          valor='R$ 589,99'
-          total='R$ 619,99'
-          desconto='R$ 61,99'
-        />
-        <Produto
-          name='Perfil Viga I.W.U-10,16cm X 6,76CM'
-          image={<img src={imgVigas} />}
-          valor='R$ 589,99'
-          total='R$ 619,99'
-          desconto='R$ 61,99'
-        />
-        <Produto
-          name='Perfil Viga I.W.U-10,16cm X 6,76CM'
-          image={<img src={imgVigas} />}
-          valor='R$ 589,99'
-          total='R$ 619,99'
-          desconto='R$ 61,99'
-        />
-        <Produto
-          name='Perfil Viga I.W.U-10,16cm X 6,76CM'
-          image={<img src={imgVigas} />}
-          valor='R$ 589,99'
-          total='R$ 619,99'
-          desconto='R$ 61,99'
-        />
-        <Produto
-          name='Perfil Viga I.W.U-10,16cm X 6,76CM'
-          image={<img src={imgVigas} />}
-          valor='R$ 589,99'
-          total='R$ 619,99'
-          desconto='R$ 61,99'
-        />
-        <Produto
-          name='Perfil Viga I.W.U-10,16cm X 6,76CM'
-          image={<img src={imgVigas} />}
-          valor='R$ 589,99'
-          total='R$ 619,99'
-          desconto='R$ 61,99'
-        />
+      <div className="container-products">
+        <div className="produtos">
+          <div className="product">
+            <Produto
+              name='Perfil Viga I.W.U-10,16cm X 6,76CM'
+              image={<img src={imgVigas} />}
+              valor='R$ 589,99'
+              total='R$ 619,99'
+              desconto='R$ 61,99'
+            />
+          </div>
+          <div className="product">
+            <Produto
+              name='Perfil Viga I.W.U-10,16cm X 6,76CM'
+              image={<img src={imgVigas} />}
+              valor='R$ 589,99'
+              total='R$ 619,99'
+              desconto='R$ 61,99'
+            />
+          </div>
+          <div className="product">
+            <Produto
+              name='Perfil Viga I.W.U-10,16cm X 6,76CM'
+              image={<img src={imgVigas} />}
+              valor='R$ 589,99'
+              total='R$ 619,99'
+              desconto='R$ 61,99'
+            />
+          </div>
+          <div className="product">
+            <Produto
+              name='Perfil Viga I.W.U-10,16cm X 6,76CM'
+              image={<img src={imgVigas} />}
+              valor='R$ 589,99'
+              total='R$ 619,99'
+              desconto='R$ 61,99'
+            />
+          </div>
+          <div className="product">
+            <Produto
+              name='Perfil Viga I.W.U-10,16cm X 6,76CM'
+              image={<img src={imgVigas} />}
+              valor='R$ 589,99'
+              total='R$ 619,99'
+              desconto='R$ 61,99'
+            />
+          </div>
+          <div className="product">
+            <Produto
+              name='Perfil Viga I.W.U-10,16cm X 6,76CM'
+              image={<img src={imgVigas} />}
+              valor='R$ 589,99'
+              total='R$ 619,99'
+              desconto='R$ 61,99'
+            />
+          </div>
+        </div>
       </div>
       <div className="divisao-main"></div>
       <section className="section-secundary">
